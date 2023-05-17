@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Dancing Script", cursive;
+  font-size: 14px;
+  .container {
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    nav {
+      height: 70px;
+      width: 100%;
+      background-color: rgb(129, 212, 250);
+      display: flex;
+      align-items: center;
+      a {
+        background-color: transparent;
+        color: #1890ff;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+        transition: color 0.3s;
+        h1 {
+          font-family: "Dancing Script", cursive;
+          transform: translateY(5px);
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: 32px;
+          color: white;
+        }
+      }
+      .links_nav {
+        margin-left: auto;
+        margin-right: 20px;
+        a {
+          color: white;
+          font-family: "Dancing Script", cursive;
+          font-size: 24px;
+          padding: 15px;
+          margin-left: 40px;
+          transition: all 0.4s ease 0s;
+        }
+      }
+    }
+    .main {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 150px;
+      @media only screen and (max-width: 1750px) {
+        padding-top: 130px;
+        width: 85%;
+      }
+      @media only screen and (max-width: 1500px) {
+        padding-top: 110px;
+        width: 95%;
+      }
+      & > img {
+        width: 600px;
+        float: left;
+        transform: translateY(-65px);
+      }
+      .input_section {
+        width: calc(100% - 600px);
+        float: left;
+        transition: all 0.2s ease 0s;
+        padding: 40px 50px;
+        h1 {
+          font-family: "Dancing Script", cursive;
+          font-size: 40px;
+          margin-bottom: 30px;
+        }
+        .input {
+          width: 100%;
+          position: relative;
+          img {
+            color: #81d4fa;
+            font-size: 27px;
+            left: 8px;
+            position: absolute;
+            top: 14px;
+            height: 1em;
+            color: #81d4fa;
+          }
+          input {
+            width: 100%;
+            padding: 13px 40px 13px 45px;
+            border: 1px solid rgb(129, 212, 250);
+            outline: none;
+            transition: all 0.2s ease 0s;
+            font-size: 17px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            box-shadow: rgba(129, 212, 250, 0.45) 0px 5px 15px;
+            line-height: inherit;
+          }
+          span {
+            font-size: 17px;
+            position: absolute;
+            z-index: 1000;
+            top: 13px;
+            right: 15px;
+            font-family: "Arvo", serif;
+            color: rgb(140, 140, 140);
+          }
+        }
+        button {
+          width: 100%;
+          padding: 4px;
+          border: none;
+          font-family: "Dancing Script", cursive;
+          color: white;
+          font-weight: 800;
+          font-size: 25px;
+          border-radius: 5px;
+          background-color: rgb(129, 212, 250);
+          transition: all 0.2s ease 0s;
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      background-color: rgba(129, 212, 250, 0.6);
+      padding: 5px 0px 50px;
+      margin-top: auto;
+      font-family: "Lato", sans-serif;
+      //   position: absolute;
+      //   bottom: -235px;
+      .links {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        text-align: center;
+        @media screen and (max-width: 1400px) {
+          width: 60%;
+        }
+        @media screen and (max-width: 1100px) {
+          width: 70%;
+          margin-top: 30px;
+        }
+        @media screen and (max-width: 800px) {
+          width: 80%;
+          margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+          width: 90%;
+          margin-top: 15px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          img {
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, 0.82), 0 2px 16px 0 #fff;
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 40px;
+            margin: 10px;
+            padding: 5px;
+            transition: 0.2s color, box-shadow 1s;
+            height: 1em;
+            width: 1em;
+            box-sizing: initial;
+            @media only screen and (max-width: 800px) {
+              margin: 5px;
+            }
+            @media only screen and (max-width: 600px) {
+              font-size: 35px;
+              margin: 4px;
+            }
+            @media only screen and (max-width: 400px) {
+              font-size: 32px;
+              margin: 3px;
+            }
+            &:hover {
+              opacity: 1;
+              box-shadow: hsla(0, 0%, 100%, 0.82) 0px 22px 70px 4px;
+            }
+          }
+          &:last-child {
+            display: block;
+            font-size: 1.4rem;
+            margin-top: 15px;
+            color: rgba(0, 0, 0, 0.4);
+            text-decoration: none;
+            transition: all 0.2s ease 0s;
+            padding: 5px;
+            text-align: center;
+            @media screen and (max-width: 800px) {
+              margin-top: 10px;
+              font-size: 1.3rem;
+            }
+            @media screen and (max-width: 600px) {
+              font-size: 1.1rem;
+            }
+            span {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

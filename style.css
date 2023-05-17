@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+  font-size: 14px;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+}
+body .container nav {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(129, 212, 250);
+  display: flex;
+  align-items: center;
+}
+body .container nav a {
+  background-color: transparent;
+  color: #1890ff;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+body .container nav a h1 {
+  font-family: "Dancing Script", cursive;
+  transform: translateY(5px);
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+}
+body .container nav .links_nav {
+  margin-left: auto;
+  margin-right: 20px;
+}
+body .container nav .links_nav a {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  padding: 15px;
+  margin-left: 40px;
+  transition: all 0.4s ease 0s;
+}
+body .container .main {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+}
+@media only screen and (max-width: 1750px) {
+  body .container .main {
+    padding-top: 130px;
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  body .container .main {
+    padding-top: 110px;
+    width: 95%;
+  }
+}
+body .container .main > img {
+  width: 600px;
+  float: left;
+  transform: translateY(-65px);
+}
+body .container .main .input_section {
+  width: calc(100% - 600px);
+  float: left;
+  transition: all 0.2s ease 0s;
+  padding: 40px 50px;
+}
+body .container .main .input_section h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+body .container .main .input_section .input {
+  width: 100%;
+  position: relative;
+}
+body .container .main .input_section .input img {
+  color: #81d4fa;
+  font-size: 27px;
+  left: 8px;
+  position: absolute;
+  top: 14px;
+  height: 1em;
+  color: #81d4fa;
+}
+body .container .main .input_section .input input {
+  width: 100%;
+  padding: 13px 40px 13px 45px;
+  border: 1px solid rgb(129, 212, 250);
+  outline: none;
+  transition: all 0.2s ease 0s;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  box-shadow: rgba(129, 212, 250, 0.45) 0px 5px 15px;
+  line-height: inherit;
+}
+body .container .main .input_section .input span {
+  font-size: 17px;
+  position: absolute;
+  z-index: 1000;
+  top: 13px;
+  right: 15px;
+  font-family: "Arvo", serif;
+  color: rgb(140, 140, 140);
+}
+body .container .main .input_section button {
+  width: 100%;
+  padding: 4px;
+  border: none;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: rgb(129, 212, 250);
+  transition: all 0.2s ease 0s;
+}
+body .container footer {
+  width: 100%;
+  background-color: rgba(129, 212, 250, 0.6);
+  padding: 5px 0px 50px;
+  margin-top: auto;
+  font-family: "Lato", sans-serif;
+}
+body .container footer .links {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+@media screen and (max-width: 1400px) {
+  body .container footer .links {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body .container footer .links {
+    width: 70%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body .container footer .links {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .container footer .links {
+    width: 90%;
+    margin-top: 15px;
+  }
+}
+body .container footer .links a {
+  text-decoration: none;
+  color: black;
+}
+body .container footer .links a img {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, 0.82), 0 2px 16px 0 #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  margin: 10px;
+  padding: 5px;
+  transition: 0.2s color, box-shadow 1s;
+  height: 1em;
+  width: 1em;
+  box-sizing: initial;
+}
+@media only screen and (max-width: 800px) {
+  body .container footer .links a img {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .container footer .links a img {
+    font-size: 35px;
+    margin: 4px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body .container footer .links a img {
+    font-size: 32px;
+    margin: 3px;
+  }
+}
+body .container footer .links a img:hover {
+  opacity: 1;
+  box-shadow: hsla(0, 0%, 100%, 0.82) 0px 22px 70px 4px;
+}
+body .container footer .links a:last-child {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  padding: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  body .container footer .links a:last-child {
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .container footer .links a:last-child {
+    font-size: 1.1rem;
+  }
+}
+body .container footer .links a:last-child span {
+  font-size: 1rem;
+}

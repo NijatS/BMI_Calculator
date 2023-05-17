@@ -1,0 +1,90 @@
+body {
+  font-family: "Dancing Script", cursive;
+  font-size: 14px;
+}
+.info {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 150px;
+  @media only screen and (max-width: 1750px) {
+    padding-top: 130px;
+    width: 85%;
+  }
+  .info_container {
+    display: inline-block;
+    img {
+      width: 750px;
+      float: left;
+      transform: translateY(-70px);
+      @media only screen and (max-width: 1550px) {
+        width: 600px;
+      }
+    }
+    .text {
+      width: calc(100% - 750px);
+      float: left;
+      padding: 40px 30px;
+      transform: translateY(40px);
+      @media only screen and (max-width: 1750px) {
+        padding: 40px 30px;
+      }
+      @media only screen and (max-width: 1550px) {
+        width: calc(100% - 600px);
+      }
+      h1 {
+        @media only screen and (max-width: 1550px) {
+          font-size: 36px;
+        }
+        font-size: 40px;
+        margin: 0px;
+        font-family: "Dancing Script", cursive;
+      }
+      h2 {
+        &:nth-child(2) {
+          @media only screen and (max-width: 1550px) {
+            font-size: 32px;
+          }
+          font-size: 35px;
+          margin: 0px;
+          font-family: "Dancing Script", cursive !important;
+        }
+        &:nth-child(3) {
+          @media only screen and (max-width: 1550px) {
+            font-size: 25px;
+          }
+          font-family: Arvo, serif;
+          font-size: 27px;
+          margin-top: 20px;
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 500;
+          margin-bottom: 0.5em;
+          line-height: 1.5715;
+        }
+        &:last-child {
+          @media only screen and (max-width: 1550px) {
+            font-size: 25px;
+          }
+          font-family: Arvo, serif;
+          font-size: 27px;
+          margin-top: 20px;
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 500;
+          margin-bottom: 0.5em;
+          line-height: 1.5715;
+          button {
+            font-size: 20px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: rgb(245, 198, 94);
+            border-radius: 5px;
+            padding: 3px;
+            margin: 0px;
+            transform: translateY(1px);
+          }
+        }
+      }
+    }
+  }
+}

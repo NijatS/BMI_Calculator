@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./body.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,39 +33,27 @@
             <a href="#">BMI History</a>
           </div>
         </nav>
-        <div class="main">
-          <img src="./Images/health.jpg" alt="Health Icon" />
-          <div class="input_section">
-            <h1>Calculate BMI</h1>
-            <div class="input">
-              <img src="./Images/pencil.svg" alt="" />
-              <input
-                type="text"
-                maxlength="30"
-                placeholder="Your name and surname..."
-              />
+        <div class="info">
+          <div class="info_container">
+            <img src="./Images/resultImage.png" alt="" />
+            <div class="text">
+              <h1>
+                <span style="font-size: 30px; color: rgb(245, 198, 94)"></span>
+              </h1>
+              <h2>
+                <span style="font-size: 30px; color: rgb(228, 40, 31)"></span>
+              </h2>
+              <h2>
+                We recommend working with a dietitian to gain a healthy weight.
+              </h2>
+              <h2>
+                Click to see the
+                <span style="font-weight: bold">diet list</span> specially
+                prepared for you.
+                <button>Click Me</button>
+              </h2>
             </div>
-            <div class="input">
-              <img src="./Images/scale.svg" alt="" />
-              <input
-                type="number"
-                max="250"
-                min="20"
-                placeholder="Your weight..."
-              />
-              <span>kg</span>
-            </div>
-            <div class="input">
-              <img src="./Images/height.svg" alt="" />
-              <input
-                type="number"
-                max="250"
-                min="50"
-                placeholder="Your height..."
-              />
-              <span>cm</span>
-            </div>
-            <button type="submit">Calculate</button>
+            <div style="height: 200px; width: 100%; float: left"></div>
           </div>
         </div>
         <footer>
