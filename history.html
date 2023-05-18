@@ -5,19 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./body.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Dancing+Script:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./history.css" />
     <title>Nijat Calculate BMI</title>
   </head>
   <body>
@@ -28,32 +22,24 @@
             <h1>Nijat Calculate</h1>
           </a>
           <div class="links_nav">
-            <a href="#">Calculate BMI</a>
-            <a href="#">What`s the BMI?</a>
-            <a href="#">BMI History</a>
+            <a href="./index.html">Calculate BMI</a>
+            <a href="./info.html">What`s the BMI?</a>
+            <a href="./history.html">BMI History</a>
           </div>
         </nav>
-        <div class="info">
-          <div class="info_container">
-            <img src="./Images/resultImage.png" alt="" />
-            <div class="text">
-              <h1>
-                <span style="font-size: 30px; color: rgb(245, 198, 94)"></span>
-              </h1>
-              <h2>
-                <span style="font-size: 30px; color: rgb(228, 40, 31)"></span>
-              </h2>
-              <h2>
-                We recommend working with a dietitian to gain a healthy weight.
-              </h2>
-              <h2>
-                Click to see the
-                <span style="font-weight: bold">diet list</span> specially
-                prepared for you.
-                <button>Click Me</button>
-              </h2>
-            </div>
-            <div style="height: 200px; width: 100%; float: left"></div>
+        <div class="history">
+          <img src="./Images/history.jpg" alt="About Icon" />
+          <div class="history_container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>BMI</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
           </div>
         </div>
         <footer>
@@ -84,6 +70,6 @@
         </footer>
       </div>
     </div>
-    <script src="./app.js"></script>
   </body>
+  <script src="./app.js"></script>
 </html>

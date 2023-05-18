@@ -6,8 +6,9 @@
 body {
   font-family: "Dancing Script", cursive;
   font-size: 14px;
+  line-height: 1.5715;
   .container {
-    // height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     nav {
@@ -16,6 +17,9 @@ body {
       background-color: rgb(129, 212, 250);
       display: flex;
       align-items: center;
+      @media only screen and (max-width: 650px) {
+        height: fit-content;
+      }
       a {
         background-color: transparent;
         color: #1890ff;
@@ -42,6 +46,27 @@ body {
           padding: 15px;
           margin-left: 40px;
           transition: all 0.4s ease 0s;
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: rgb(245, 198, 94);
+          }
+          @media only screen and (max-width: 1000px) {
+            font-size: 22px;
+            margin-left: 30px;
+          }
+          @media only screen and (max-width: 800px) {
+            font-size: 20px;
+            margin-left: 20px;
+          }
+          @media only screen and (max-width: 700px) {
+            font-size: 19px;
+            margin-left: 10px;
+          }
+          @media only screen and (max-width: 650px) {
+            display: block;
+            padding: 3px 5px;
+            font-size: 18px;
+          }
         }
       }
     }
@@ -58,20 +83,59 @@ body {
         padding-top: 110px;
         width: 95%;
       }
+      @media only screen and (max-width: 1200px) {
+        padding-top: 90px;
+        width: 100%;
+      }
+      @media only screen and (max-width: 1050px) {
+        padding-top: 40px;
+        text-align: center;
+      }
       & > img {
         width: 600px;
         float: left;
         transform: translateY(-65px);
+        @media only screen and (max-width: 1050px) {
+          float: none;
+          width: 350px;
+          max-width: 90%;
+          transform: translateY(0px);
+        }
       }
       .input_section {
         width: calc(100% - 600px);
         float: left;
         transition: all 0.2s ease 0s;
         padding: 40px 50px;
+        @media only screen and (max-width: 1050px) {
+          float: none;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 35px 45px;
+        }
+        @media only screen and (max-width: 850px) {
+          width: 90%;
+          padding: 30px 40px;
+        }
+        @media only screen and (max-width: 650px) {
+          width: 100%;
+          padding: 20px 30px;
+        }
+
         h1 {
           font-family: "Dancing Script", cursive;
           font-size: 40px;
           margin-bottom: 30px;
+          @media only screen and (max-width: 1050px) {
+            font-size: 35px;
+          }
+          @media only screen and (max-width: 850px) {
+            font-size: 32px;
+          }
+          @media only screen and (max-width: 650px) {
+            font-size: 28px;
+          }
         }
         .input {
           width: 100%;
@@ -123,14 +187,162 @@ body {
         }
       }
     }
+    .info {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 150px;
+      @media only screen and (max-width: 1750px) {
+        padding-top: 130px;
+        width: 85%;
+      }
+      @media only screen and (max-width: 1500px) {
+        padding-top: 110px;
+        width: 95%;
+      }
+      @media only screen and (max-width: 1200px) {
+        padding-top: 90px;
+        width: 100%;
+      }
+      @media only screen and (max-width: 1050px) {
+        padding-top: 40px;
+        text-align: center;
+      }
+      .info_container {
+        display: inline-block;
+        img {
+          width: 750px;
+          float: left;
+          transform: translateY(-70px);
+          @media only screen and (max-width: 1550px) {
+            width: 600px;
+          }
+          @media only screen and (max-width: 1300px) {
+            width: 500px;
+            transform: translateY(0px);
+          }
+          @media only screen and (max-width: 1050px) {
+            float: none;
+            width: 350px;
+            max-width: 90%;
+          }
+        }
+        .text {
+          width: calc(100% - 750px);
+          float: left;
+          padding: 40px 30px;
+          transform: translateY(40px);
+          @media only screen and (max-width: 1750px) {
+            padding: 40px 30px;
+          }
+          @media only screen and (max-width: 1550px) {
+            width: calc(100% - 600px);
+          }
+          @media only screen and (max-width: 1300px) {
+            width: calc(100% - 500px);
+          }
+          @media only screen and (max-width: 1050px) {
+            float: none;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 35px 25px;
+          }
+          @media only screen and (max-width: 850px) {
+            width: 90%;
+            padding: 30px 20px;
+          }
+          @media only screen and (max-width: 650px) {
+            width: 100%;
+            padding: 20px 10px;
+          }
+
+          h1 {
+            @media only screen and (max-width: 1550px) {
+              font-size: 36px;
+            }
+            @media only screen and (max-width: 1050px) {
+              font-size: 32px;
+            }
+            @media only screen and (max-width: 850px) {
+              font-size: 28px;
+            }
+            @media only screen and (max-width: 650px) {
+              font-size: 24px;
+            }
+            font-size: 40px;
+            margin: 0px;
+            font-family: "Dancing Script", cursive;
+          }
+          h2 {
+            &:nth-child(2) {
+              @media only screen and (max-width: 1550px) {
+                font-size: 32px;
+              }
+              @media only screen and (max-width: 1050px) {
+                font-size: 28px;
+              }
+              @media only screen and (max-width: 850px) {
+                font-size: 24px;
+              }
+              @media only screen and (max-width: 650px) {
+                font-size: 22px;
+              }
+              font-size: 35px;
+              margin: 0px;
+              font-family: "Dancing Script", cursive !important;
+            }
+            &:nth-child(3) {
+              @media only screen and (max-width: 1550px) {
+                font-size: 20px;
+              }
+              font-family: Arvo, serif;
+              font-size: 22px;
+              margin-top: 20px;
+              color: rgba(0, 0, 0, 0.85);
+              font-weight: 500;
+              margin-bottom: 0.5em;
+              line-height: 1.5715;
+            }
+            &:last-child {
+              @media only screen and (max-width: 1550px) {
+                font-size: 20px;
+              }
+              font-family: Arvo, serif;
+              font-size: 22px;
+              margin-top: 20px;
+              color: rgba(0, 0, 0, 0.85);
+              font-weight: 500;
+              margin-bottom: 0.5em;
+              line-height: 1.5715;
+              button {
+                font-size: 20px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                color: rgb(245, 198, 94);
+                border-radius: 5px;
+                padding: 3px;
+                margin: 0px;
+                transform: translateY(1px);
+              }
+            }
+          }
+        }
+      }
+    }
     footer {
       width: 100%;
       background-color: rgba(129, 212, 250, 0.6);
       padding: 5px 0px 50px;
       margin-top: auto;
       font-family: "Lato", sans-serif;
-      //   position: absolute;
-      //   bottom: -235px;
+      @media only screen and (max-width: 1100px) {
+        padding: 5px 0px 20px;
+      }
+      @media only screen and (max-width: 800px) {
+        padding: 5px 0px 10px;
+      }
       .links {
         width: 50%;
         margin-left: auto;
@@ -173,10 +385,6 @@ body {
             @media only screen and (max-width: 600px) {
               font-size: 35px;
               margin: 4px;
-            }
-            @media only screen and (max-width: 400px) {
-              font-size: 32px;
-              margin: 3px;
             }
             &:hover {
               opacity: 1;
